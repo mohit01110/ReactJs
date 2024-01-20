@@ -1,0 +1,100 @@
+/* UserList.css */
+
+/* Container styling for the user list */
+.user-list-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius:50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Heading styling for the user list */
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Styling for the unordered list */
+ul {
+    list-style: none;
+    padding: 0;
+    /* flex-direction: column; */
+}
+
+/* Styling for each list item in the user list */
+li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: calc(50% - 8px); 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    box-sizing: border-box;
+    
+}
+
+input.email {
+    margin-left: 16px;
+}
+
+/* Hover effect for list items */
+li:hover {
+    background-color: #f9f9f9;
+}
+
+/* Styling for the bullet point before each list item */
+li::before {
+    content: none; /* Bullet point */
+    color: #007bff; /* Bullet point color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+button.edit-button {
+    background-color: #28a745;
+}
+
+button.delete-button {
+    background-color: #dc3545;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styling for the edit button icon */
+button .edit-icon {
+    margin-right: 5px;
+}
+
+/* Additional styling for the delete button icon */
+button .delete-icon {
+    margin-right: 5px;
+}
+
